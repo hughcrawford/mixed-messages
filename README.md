@@ -8,7 +8,7 @@ Every time a user runs the program, they should get a new, randomized output. Po
 * Use command line
 * Develop locally on your computer
 
-## Languages
+## Technology
 * JavaScript
 * Git & GitHub
 * Command Line
