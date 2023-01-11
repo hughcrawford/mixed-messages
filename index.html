@@ -3,10 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Random Name Generator</title>
+        <title>Galactic Name Generator</title>
         <meta name="description" content="Random Name Generator">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
@@ -19,19 +18,53 @@
                 text-align: center;
             }
 
-            p {
+            h1 {
+                padding-bottom: 10px;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .output {
                 font-size: 2rem;
+                font-weight: bold;
+            }
+
+            button {
+                padding: 15px 20px;
+                font-family: 'Space Grotesk', sans-serif;
+                background-color: #FFE81F;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: bold;
+                border-width: 0;
+            }
+
+            .gif {
+                border-radius: 5px;              
+            }
+
+            @media only screen and (max-width: 576px) {
+                .gif {
+                    height: auto;
+                    width: 100%;               
+                }     
             }
         </style>
     </head>
     <body>
+        <h1>Galactic Name Generator</h1>
 
-        <h1>Random Name Generator</h1>
+        <img class="gif" src="https://media.tenor.com/WuOwfnsLcfYAAAAC/star-wars-obi-wan-kenobi.gif" /> 
+        
+        <p class="subtitle">Your galactic name is:</p>
+            <p class="output" id="nameOutput">&mdash;</p>
+        
+        <p class="subtitle">Your home planet is:</p>
+            <p class="output" id="planetOutput">&mdash;</p>
 
-        <button onclick="randomMessage()">Generate Your Space Name</button>
-
-        <p id="nameOutput"></p>
-        <p id="planetOutput"></p>
+        <button onclick="randomMessage()">CLICK TO REVEAL YOUR GALACTIC NAME</button>
         
         <script src="mixed-messages.js" async></script>
     </body>

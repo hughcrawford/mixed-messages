@@ -1,6 +1,6 @@
-const firstName = ['Luke', 'Leia', 'Han', 'R2', 'C3'];
-const lastName = ['Skywalker', 'Organa', 'Solo', 'D2', 'PO'];
-const homePlanet = ['Tatooine', 'Alderaan', 'Corellia', 'Naboo', 'Affa'];
+const firstName = ['Luke', 'Leia', 'Han', 'Bobba', 'Ben', 'Bib', 'Darth'];
+const lastName = ['Skywalker', 'Organa', 'Solo', 'Fett', 'Kenobi', 'Fortuna', 'Vader'];
+const homePlanet = ['Tatooine', 'Alderaan', 'Corellia', 'Naboo', 'Coruscant', 'Hoth', 'Kamino', 'Dagobah', 'Kashyyyk'];
 
 let randomMessage = () => {
 
@@ -16,6 +16,6 @@ let randomMessage = () => {
     console.log(randomHomePlanet);
     */
 
-    document.getElementById("nameOutput").innerHTML = 'Your name is: ' + randomFirstName + ' ' + randomSecondName;
-    document.getElementById("planetOutput").innerHTML = 'Your home planet is: ' + randomHomePlanet;
+    document.getElementById("nameOutput").innerHTML = randomFirstName + ' ' + randomSecondName;
+    document.getElementById("planetOutput").innerHTML = randomHomePlanet;
 };
