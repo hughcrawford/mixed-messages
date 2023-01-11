@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Random Name Generator</title>
+        <meta name="description" content="Random Name Generator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+            html, body {
+                background-image: url(images/space-background.jpeg);
+                background-color: #000000;
+                color: #FFE81F;
+                font-family: 'Space Grotesk', sans-serif;
+                text-align: center;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Random Name Generator</h1>
+
+        <button onclick="randomMessage()">Generate Your Space Name</button>
+
+        <p id="nameOutput"></p>
+        <p id="planetOutput"></p>
+        
+        <script src="mixed-messages.js" async></script>
+    </body>
+</html>
